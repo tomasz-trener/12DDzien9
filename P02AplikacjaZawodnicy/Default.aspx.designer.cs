@@ -42,6 +42,15 @@ namespace P02AplikacjaZawodnicy
         protected global::System.Web.UI.WebControls.ListBox lbDane;
 
         /// <summary>
+        /// pnlSzczegolyZawodnika control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlSzczegolyZawodnika;
+
+        /// <summary>
         /// txtImie control.
         /// </summary>
         /// <remarks>
@@ -94,5 +103,41 @@ namespace P02AplikacjaZawodnicy
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtWzrost;
+
+        /// <summary>
+        /// btnZapisz control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnZapisz;
+
+        /// <summary>
+        /// btnUsun control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUsun;
+
+        /// <summary>
+        /// btnNowy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnNowy;
+
+        /// <summary>
+        /// btnCzysc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCzysc;
     }
 }
