@@ -11,10 +11,11 @@ namespace P03AplikacjaZawodnicyLadna
 {
     public partial class Default : System.Web.UI.Page
     {
+        public Zawodnik[] Zawodnicy;
         protected void Page_Load(object sender, EventArgs e)
         {
             ZawodnicyRepository zr = new ZawodnicyRepository();
-            Zawodnik[] zawodnicy = zr.PodajZawodnikow();
+            Zawodnicy = zr.PodajZawodnikow();
 
              // nie bedziemy korzystac z tabelki .Net poniewaz 
              // przy bardziej skomplikowanych elemtnrach 

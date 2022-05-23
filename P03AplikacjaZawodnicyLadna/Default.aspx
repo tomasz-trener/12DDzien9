@@ -162,8 +162,10 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"> Simple Table</h4>
+                <h4 class="card-title">Zawodnicy</h4>
               </div>
+                <a style="margin-left: 20px;font-size: 25px;font-weight: bold;" href="Szczegoly.aspx">Nowy</a>
+
               <div class="card-body">
                 <div class="table-responsive">
 
@@ -174,117 +176,45 @@
                   <table class="table">
                     <thead class=" text-primary">
                       <th>
-                        Name
+                        Nazwa
                       </th>
                       <th>
-                        Country
+                        Kraj
                       </th>
                       <th>
-                        City
+                        Wzrost
                       </th>
-                      <th class="text-right">
-                        Salary
+                      <th >
+                        Data ur
                       </th>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>
-                          Dakota Rice
-                        </td>
-                        <td>
-                          Niger
-                        </td>
-                        <td>
-                          Oud-Turnhout
-                        </td>
-                        <td class="text-right">
-                          $36,738
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Minerva Hooper
-                        </td>
-                        <td>
-                          Curaçao
-                        </td>
-                        <td>
-                          Sinaai-Waas
-                        </td>
-                        <td class="text-right">
-                          $23,789
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Sage Rodriguez
-                        </td>
-                        <td>
-                          Netherlands
-                        </td>
-                        <td>
-                          Baileux
-                        </td>
-                        <td class="text-right">
-                          $56,142
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Philip Chaney
-                        </td>
-                        <td>
-                          Korea, South
-                        </td>
-                        <td>
-                          Overland Park
-                        </td>
-                        <td class="text-right">
-                          $38,735
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Doris Greene
-                        </td>
-                        <td>
-                          Malawi
-                        </td>
-                        <td>
-                          Feldkirchen in Kärnten
-                        </td>
-                        <td class="text-right">
-                          $63,542
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Mason Porter
-                        </td>
-                        <td>
-                          Chile
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $78,615
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Jon Porter
-                        </td>
-                        <td>
-                          Portugal
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $98,615
-                        </td>
-                      </tr>
+               
+                        <%
+                            foreach (var z in Zawodnicy)
+                            { 
+                        %>
+
+                            <tr>
+                                <td><a href="Szczegoly.aspx?mojeId=<%= z.Id %>"><%= z.ImieNazwisko %></a></td>
+                                <td><%= z.Kraj %></td>
+                                <td><%= z.Wzrost %></td>
+
+                               <%-- <td>
+                                    <% if (z.DataUrodzenia != null)
+                                        {
+                                            Response.Write(((DateTime)z.DataUrodzenia).ToString("dd-MM-yyy"));
+                                        } %>
+                                </td>--%>
+
+                                <td><%= z.DataUrodzenia?.ToString("dd-MM-yyyy") %></td>
+                            </tr>
+
+
+                         <%  }
+                            %>
+
+
                     </tbody>
                   </table>
                 </div>
