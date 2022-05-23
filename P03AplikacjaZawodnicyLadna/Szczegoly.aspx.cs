@@ -51,7 +51,7 @@ namespace P03AplikacjaZawodnicyLadna
 
             if (!string.IsNullOrWhiteSpace(txtDataUr.Text))
                 zawodnik.DataUrodzenia = Convert.ToDateTime(txtDataUr.Text);
-
+             
             zawodnik.Wzrost = Convert.ToInt32(txtWzrost.Text);
             zawodnik.Waga = Convert.ToInt32(txtWaga.Text);
             
